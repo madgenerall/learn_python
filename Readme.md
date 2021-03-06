@@ -10,7 +10,15 @@
 4) чтение параметров запроса
 
 
+Как написать метод для обработки запроса:
 
+```python
+@app.route('/new')
+def some_func():
+    # читаем параметр с именем - parameter_name
+    parameter = request.args.get('parameter_name') 
+    return Response() # если нужен пустой ответ
+```
 
 
 
