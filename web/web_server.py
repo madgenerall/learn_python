@@ -26,7 +26,7 @@ def add(shapka, body, filename):
 
 
 @app.route('/new')
-def joy():
+def new():
     zagolovok = request.args.get('z')
     telo = request.args.get('x')
     add(zagolovok, telo, filename)
